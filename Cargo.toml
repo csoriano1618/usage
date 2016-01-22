@@ -1,0 +1,9 @@
+[package]
+name = "usage"
+version = "0.1.0"
+authors = ["Carlos Soriano <csoriano@gnome.org>"]
+
+[dependencies]
+gtk = {}
+cairo-rs = { git = "https://github.com/gtk-rs/cairo.git" }
+sysinfo = "~0.1"

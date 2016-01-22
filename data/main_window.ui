@@ -1,0 +1,25 @@
+<?xml version="2.0" encoding="UTF-8"?>
+<interface>
+  <!-- interface-requires gtk+ 3.0 -->
+  <object class="GtkApplicationWindow" id="window">
+    <property name="title" translatable="yes">Usage</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar">
+        <property name="visible">True</property>
+        <property name="show-close-button">True</property>
+        <property name="custom-title">stack_switcher</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkStack" id="pages_stack">
+        <property name="visible">True</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkStackSwitcher" id="stack_switcher">
+    <property name="visible">True</property>
+    <property name="stack">pages_stack</property>
+    <property name="margin-start">10</property>
+    <property name="margin-end">20</property>
+  </object>
+</interface>

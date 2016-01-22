@@ -1,0 +1,58 @@
+<?xml version="2.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkGrid" id="graphic_grid">
+    <property name="visible">true</property>
+    <property name="hexpand">true</property>
+    <property name="vexpand">true</property>
+    <child>
+      <object class="GtkLabel" id="title_label">
+        <property name="visible">true</property>
+      </object>
+      <packing>
+        <property name="top-attach">0</property>
+        <property name="left-attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="current_value_label">
+        <property name="visible">true</property>
+      </object>
+      <packing>
+        <property name="top-attach">0</property>
+        <property name="left-attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="divisions_values_box">
+        <property name="visible">true</property>
+        <property name="orientation">vertical</property>
+      </object>
+      <packing>
+        <property name="top-attach">1</property>
+        <property name="left-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkDrawingArea" id="current_value_area">
+        <property name="visible">true</property>
+      </object>
+      <packing>
+        <property name="top-attach">1</property>
+        <property name="left-attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="description_label">
+        <property name="visible">true</property>
+      </object>
+      <packing>
+        <property name="top-attach">2</property>
+        <property name="left-attach">1</property>
+      </packing>
+    </child>
+  </object>
+  <object class="GtkDrawingArea" id="historic_area">
+    <property name="visible">true</property>
+    <property name="expand">true</property>
+  </object>
+</interface>
